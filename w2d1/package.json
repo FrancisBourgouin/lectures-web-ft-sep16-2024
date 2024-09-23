@@ -1,0 +1,19 @@
+{
+  "name": "w2d1",
+  "version": "1.0.0",
+  "description": "Lecture about TDD and Mocha and Chai",
+  "main": "calculate-cart.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.4.1",
+    "mocha": "^10.7.3"
+  }
+}
