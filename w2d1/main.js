@@ -28,3 +28,6 @@ const obj1 = { a: 1 };
 const obj2 = { a: 1 };
 
 obj1 === obj2;
+
+
+

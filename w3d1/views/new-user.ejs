@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>NEW USER TIME!</title>
+  </head>
+  <body>
+    <header>
+      <h1>NEW USER TIME!</h1>
+    </header>
+    <main>
+      <form action="/users" method="POST">
+        <input type="text" name="id" placeholder="Enter the id">
+        <input type="text" name="name" placeholder="Enter the name">
+        <input type="text" name="description" placeholder="Enter the description">
+        <input type="text" name="password" placeholder="Enter the password">
+        <button>Add user!</button>
+      </form>
+    </main>
+    <footer>
+      <p>Copyright <%= currentYear %></p>
+    </footer>
+  </body>
+</html>

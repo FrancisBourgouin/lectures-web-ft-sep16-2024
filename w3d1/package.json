@@ -1,0 +1,25 @@
+{
+  "name": "w3d1",
+  "version": "1.0.0",
+  "description": "- HTTP Review\r - Basic web server review\r - Simple routing with HTTP\r - Better routing with Express\r - What are middlewares?\r - Playing with template literals\r - Route breakout/\r - Using a rendering engine",
+  "main": "00-net_server.js",
+  "scripts": {
+    "00": "nodemon ./00-net-server.js",
+    "01": "nodemon ./01-simple-server.js",
+    "02": "nodemon ./02-simple-routing.js",
+    "03": "nodemon ./03-express-server.js",
+    "04": "nodemon ./04-express-server-ejs.js",
+    "05": "nodemon ./05-express-server-middleware.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "keywords": []
+}
