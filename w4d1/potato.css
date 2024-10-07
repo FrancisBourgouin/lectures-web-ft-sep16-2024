@@ -1,0 +1,77 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 300px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playwrite PE", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-family: "Open Sans", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 70vh;
+
+  background-image: url(https://images.unsplash.com/photo-1628236879201-783fa93fe7bd?q=80&w=3800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
+}
+
+header h1{
+  font-size:60px;
+  /* text-transform: uppercase; */
+}
+
+section,
+header{
+  padding:40px;
+}
+
+section.intro{
+
+}
+
+section.intro p{
+  max-width:700px;
+  margin:0 auto;
+}
+
+section.posts article{
+  width:60%;
+  margin:20px auto;
+
+  display:flex;
+  align-items: center;
+  gap:20px;
+
+}
+
+section.posts article:nth-of-type(2n + 1){
+  flex-direction: row-reverse;
+  padding:20px;
+  background-color: #1FC3FF;
+}

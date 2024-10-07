@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CSS Selectors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style type="text/css">
+    header h1 {
+      /* Spaces affect all descendants */
+      color: #bada55;
+    }
+
+    section > h1 {
+      /* > symbol will affect only the direct descendant (children) */
+      text-transform: uppercase;
+
+      color: #89ba11 !important;
+    }
+
+    section h1 {
+      color: #bad;
+    }
+
+    article.sponsored {
+      background: yellow;
+      border: 5px solid orangered;
+      padding: 20px;
+    }
+
+    article#article-2,
+    article:last-of-type {
+      background: #b0b;
+    }
+    
+  </style>
+  <body>
+    <header>
+      <h1>Super website of destiny!</h1>
+    </header>
+    <main>
+      <section>
+        <h1>Top news!</h1>
+        <article class="sponsored">
+          <h1>Article 1</h1>
+          <h2>Some subtitle</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione debitis
+            velit aut enim id minima, quis placeat explicabo minus eaque, magnam quos quas
+            numquam aperiam voluptatum, assumenda ut dolor.
+          </p>
+        </article>
+        <article id="article-2" class="sponsored">
+          <h1>Article 2</h1>
+          <h2>Some subtitle</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione debitis
+            velit aut enim id minima, quis placeat explicabo minus eaque, magnam quos quas
+            numquam aperiam voluptatum, assumenda ut dolor.
+          </p>
+        </article>
+        <article class="article">
+          <h1 class="article-title">Article 3</h1>
+          <h2>Some subtitle</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione debitis
+            velit aut enim id minima, quis placeat explicabo minus eaque, magnam quos quas
+            numquam aperiam voluptatum, assumenda ut dolor.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
