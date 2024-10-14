@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+
+
+      body,html{
+        background:#333;
+        color:#fff;
+      }
+
+      section{
+        padding:1em;
+      }
+
+      article img{
+        width:100%;
+      }
+
+      @media screen and (min-width:800px){
+        section{
+          display:flex;
+          flex-wrap: wrap;
+          gap:2%;
+        }
+
+        article{
+          width:45%;
+        }
+      }
+
+      /* @media screen and (min-width:1300px) and (max-width:1800px){ MOST PROBABLY A BAD IDEA */
+      @media screen and (min-width:1300px){
+        article{
+          width:30%;
+        }
+      }
+
+     
+
+      img:hover{
+        transform: rotate(720deg);
+        opacity: 0;
+        transition: transform 600ms ease-out, opacity 800ms linear;
+      }
+
+      img{
+        animation: rotate-and-vanish 3s linear 3s forwards;
+      }
+      p{
+        animation: rotate-and-vanish 1s linear 4s forwards;
+      }
+      *{
+        animation: rotate-and-vanish 3s linear 6s forwards;
+      }
+
+      @keyframes rotate-and-vanish {
+        0%{
+          opacity: 1;
+          transform: rotate(0);
+        }
+        100%{
+          opacity: 0;
+          transform: rotate(720deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <article>
+        <img src="images/20220131174506_1.jpg" alt="" />
+        <p>An image!</p>
+      </article>
+      <article>
+        <img src="images/20220131221341_1.jpg" alt="" />
+        <p>An image!</p>
+      </article>
+      <article>
+        <img src="images/20220201000857_1.jpg" alt="" />
+        <p>An image!</p>
+      </article>
+      <article>
+        <img src="images/20220202213814_1.jpg" alt="" />
+        <p>An image!</p>
+      </article>
+    </section>
+  </body>
+</html>

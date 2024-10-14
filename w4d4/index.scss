@@ -1,0 +1,26 @@
+$text: #b0b;
+$background: #f5fdfc;
+$primary: #44d2d3;
+$secondary: #e48fb7;
+$accent: #d8965d;
+
+body {
+  background: $background;
+  color: $text;
+
+  padding: 1em;
+  margin: 0 1em;
+
+  transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}
+
+article {
+  background: $secondary;
+
+  p {
+    color: $text;
+  }
+}

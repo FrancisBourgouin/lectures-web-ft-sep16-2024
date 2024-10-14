@@ -1,0 +1,19 @@
+:root {
+  --text: #061816;
+  --background: #f5fdfc;
+  --primary: #44d2d3;
+  --secondary: #e48fb7;
+  --accent: #d8965d;
+}
+
+body {
+  background: var(--background);
+}
+
+article {
+  background-color: var(--secondary);
+
+  p {
+    color: var(--text);
+  }
+}

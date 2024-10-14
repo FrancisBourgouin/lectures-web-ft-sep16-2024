@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      const randomColor = () => {
+        const r = Math.floor(Math.random() * 255);
+        const g = Math.floor(Math.random() * 255);
+        const b = Math.floor(Math.random() * 255);
+
+        return `rgb(${r},${g},${b})`;
+      };
+      const randomizeColors = () => {
+        let root = document.documentElement;
+
+        root.style.setProperty("--primary-color", randomColor());
+        root.style.setProperty("--secondary-color", randomColor());
+        root.style.setProperty("--primary-background", randomColor());
+      };
+
+      document.addEventListener("DOMContentLoaded", () => {
+        document.addEventListener("click", randomizeColors);
+      });
+    </script>
+    <style>
+:root{
+  --primary-color:#fff;
+  --primary-background:#333;
+}
+
+      body,
+      html {
+        background: var(--primary-background);
+        color: var(--primary-color);
+      }
+
+      section {
+        padding: 1em;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+      }
+      article {
+        width: 30%;
+      }
+
+      article img {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 1200px) {
+        article {
+          width: 45%;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        article {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <article>
+        <img src="images/20220131174506_1.jpg" alt="" />
+        <p>An image!</p>
+      </article>
+      <article>
+        <img src="images/20220131221341_1.jpg" alt="" />
+        <p>An image!</p>
+      </article>
+      <article>
+        <img src="images/20220201000857_1.jpg" alt="" />
+        <p>An image!</p>
+      </article>
+      <article>
+        <img src="images/20220202213814_1.jpg" alt="" />
+        <p>An image!</p>
+      </article>
+    </section>
+  </body>
+</html>

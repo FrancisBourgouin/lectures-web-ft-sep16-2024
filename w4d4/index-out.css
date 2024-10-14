@@ -1,0 +1,19 @@
+body {
+  background: #f5fdfc;
+  color: #b0b;
+  padding: 1em;
+  margin: 0 1em;
+  transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}
+
+article {
+  background: #e48fb7;
+}
+article p {
+  color: #b0b;
+}
+
+/*# sourceMappingURL=index-out.css.map */

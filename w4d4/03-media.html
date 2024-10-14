@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Media Queries</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body,html{
+        background:#333;
+        color:#fff;
+      }
+
+      section{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        gap:1em;
+      }
+      
+      article {
+        max-width:40%;
+      }
+
+      article img{
+        width:100%;
+      }
+
+      article p {
+        font-size:4em;
+        margin:0;
+      }
+
+      /* Almost an 'if' statement like in JS */
+      @media screen and (max-width:1500px){
+        article{
+          max-width: 100%;
+        }
+      }
+
+      @media screen and (min-width:1500px){
+        article{
+          max-width: 100%;
+        }
+      }
+
+      @media print {
+        body,html{
+          background:yellow;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <article>
+        <img src="images/20220131174506_1.jpg" alt="" />
+        <p>An image!</p>
+      </article>
+      <article>
+        <img src="images/20220131221341_1.jpg" alt="" />
+        <p>An image!</p>
+      </article>
+      <article>
+        <img src="images/20220201000857_1.jpg" alt="" />
+        <p>An image!</p>
+      </article>
+      <article>
+        <img src="images/20220202213814_1.jpg" alt="" />
+        <p>An image!</p>
+      </article>
+    </section>
+  </body>
+</html>
