@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JOKES OF DESTINY!</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1>New Joke</h1>
+    <form action="/jokes" method="POST">
+      <input type="text" name="question" placeholder="Enter the question" />
+      <input type="text" name="answer" placeholder="Enter the answer" />
+      <input type="number" name="rating" placeholder="Enter the rating" />
+      <select name="author_id">
+        <option value="">Author name!</option>
+        <% for(const author of authors){ %>
+          <option value="<%= author.id %>"><%= author.name %></option>
+        <% } %>
+      </select>
+      <button>Add joke!</button>
+    </form>
+  </body>
+</html>

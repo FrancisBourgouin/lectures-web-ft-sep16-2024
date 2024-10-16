@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JOKES OF DESTINY!</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1>JOKES OF DESTINY!</h1>
+    <section>
+      <% for(const joke of jokes){ %>
+          <%- include('_joke', {joke}) %>
+      <% } %>
+    </section>
+  </body>
+</html>
