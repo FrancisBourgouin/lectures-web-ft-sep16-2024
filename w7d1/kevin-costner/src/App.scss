@@ -1,0 +1,53 @@
+body,html{
+  margin:0;
+  background-color: #333;
+  color:#fff;
+  font-size:36px;
+}
+
+.App {
+  text-align: center;
+}
+
+h1,h2{
+  margin:0;
+}
+
+
+.Header{
+  background-color: #b0b;
+  padding:1em;
+}
+
+.PlantList{
+  max-width: 1200px;
+  margin:1em auto;
+  font-size:0.75em;
+
+  display:grid;
+  gap:1em;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.PlantListItem{
+  border:0.2em solid white;
+  padding:1em;
+
+  &.happy{
+    border-color:greenyellow
+  }
+
+  &.sad{
+    border-color: rgb(255, 47, 0);
+  }
+
+  h1{
+    font-size:2em;
+    margin-bottom:1em;
+  }
+
+  h2{
+    font-size:1.25em;
+  }
+}
