@@ -1,0 +1,88 @@
+body,
+html {
+  margin: 0;
+  font-size: 36px;
+
+  text-align: center;
+}
+
+.Header {
+  background-color: #b0b;
+  padding: 1em;
+}
+
+.ForumPost {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  & > header {
+    padding: 1em;
+    background-color: #c0ffee;
+    color: #333;
+
+    h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+    }
+    img {
+      width: 2em;
+      border-radius: 50%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+  }
+}
+
+// .ReplyList{
+//   max-width:1400px;
+//   margin:0 auto;
+// }
+
+.ReplyListItem {
+  display: grid;
+  grid-template-columns: 8em 1fr;
+  grid-template-rows: 1fr 1.5em;
+  gap: 1em;
+  padding: 1em;
+
+  grid-template-areas:
+    "img text"
+    "name likes";
+
+  &:nth-of-type(even) {
+    background-color: #bada55;
+    color: #333;
+  }
+
+  img {
+    grid-area: img;
+    width: 100%;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  p {
+    grid-area: text;
+    text-align: left;
+  }
+  span {
+    grid-area: name;
+  }
+  div {
+    grid-area: likes;
+    text-align: right;
+  }
+}
+
+.ReplyForm {
+  background-color: #face;
+  padding:1em;
+  margin:1em 0;
+
+  input,
+  button {
+    font-size: 1em;
+  }
+}

@@ -19,9 +19,10 @@ const plant = {
 
 
 ```js
-const plants = [plant, plant];
+const plants = [plant, plant]; // .map, .forEach easily (less costly)
 
-const plantsObj = { 1: plant, 2: plant };
+const plantsObj = { 1: plant, 2: plant }; // Better when targeting a singular element
+Object.values(plantsObj)
 ```
 
 ## Seed
